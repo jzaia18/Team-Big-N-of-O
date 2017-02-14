@@ -5,7 +5,7 @@
   <INSERT YOUR DISTILLATION OF ALGO HERE>
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
-  <INSERT YOUR EXECUTION TIME CATEGORIZATION OF MERGESORT HERE>
+  O(n*log(n))
 
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
@@ -19,8 +19,7 @@
   <INSERT YOUR RESULTS ANALYSIS HERE>
   ======================================*/
 
-public class MergeSortTester 
-{
+public class MergeSortTester {
 
     /******************************
      * execution time analysis 
@@ -28,8 +27,7 @@ public class MergeSortTester
      *  YOUR APPARATUS FOR GENERATING EXECUTION 
      *  TIME DATA...>
      ******************************/
-    public static void main( String[] args ) 
-    {
+    public static void main( String[] args ) {
 
     }//end main
 
