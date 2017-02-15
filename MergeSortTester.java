@@ -49,7 +49,8 @@ public class MergeSortTester {
 	populate(arr3);
 	populate(arr4);
 	populate(arr5);
-	populate(arr6);
+	    
+	
     }//end main
 
 }//end class
