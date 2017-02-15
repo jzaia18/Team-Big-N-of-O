@@ -113,9 +113,9 @@ public class MergeSort {
     }
     //---------------------------------------------------
 
-    public static void populate(int []  a){
+    public static void populate( int []  a ) {
 	int al = a.length;
-	for (int i = 0; i < al; i++){
+	for ( int i = 0; i < al; i++ ) {
 	    a[i] = (int) Math.random() * 101;
 	}
     }
