@@ -9,7 +9,7 @@
   O(n*log(n))
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
-  n=1       time: 1487136573419 --> ??????
+  n=1       time: 10
   n=10      time: 1487136630551 --> 57132
   n=100     time: 1487136677494 --> 46943
   n=1000    time: 1487136719313 --> 41819
@@ -39,6 +39,8 @@ public class MergeSortTester {
 
     public static void main( String[] args ) {
         
+    long beginTime = System.currentTimeMillis();
+        
 	int[] arr0 = {0};
 	int[] arr1 = new int [10];
 	int[] arr2 = new int [100];
@@ -52,20 +54,16 @@ public class MergeSortTester {
 	populate(arr4);
 	populate(arr5);
 	
-	/*MergeSort.sort( arr0 );
-	System.out.println ( System.currentTimeMillis() );
+	MergeSort.sort( arr0 );
 	MergeSort.sort( arr1 );
-	System.out.println ( System.currentTimeMillis() );
 	MergeSort.sort( arr2 );
-	System.out.println ( System.currentTimeMillis() );
 	MergeSort.sort( arr3 );
-	System.out.println ( System.currentTimeMillis() );
 	MergeSort.sort( arr4 );
-	System.out.println ( System.currentTimeMillis() );*/
 	MergeSort.sort( arr5 );
-	System.out.println ( System.currentTimeMillis() );
 	
-	//System.out.println ( System.currentTimeMillis() );
+	long endTime = System.currentTimeMillis();
+    long difference = endTime - beginTime;
+    System.out.println( difference );
 	    
 	
     }//end main
