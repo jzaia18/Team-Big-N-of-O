@@ -120,7 +120,7 @@ public class MergeSort {
     public static void populate(int []  a){
 	int al = a.length;
 	for (int i = 0; i < al; i++){
-	    a[i] = (int) 101 * Math.random();
+	    a[i] = (int) Math.random() * 101;
 	}
     }
 
