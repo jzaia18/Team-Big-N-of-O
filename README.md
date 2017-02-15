@@ -1,5 +1,5 @@
 # **Team-Big-N-of-O**
-##### Maggie Xia, Jake Zaia, Joshel Xiedeng
+##### *Maggie Xia, Jake Zaia, Joshel Xiedeng
 
 ### MergeSort Algo:
   * merge() takes two int[] inputs and returns an int[] output that combines the elements of the two inputs in ascending order.
