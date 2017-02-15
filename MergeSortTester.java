@@ -37,7 +37,7 @@ public class MergeSortTester {
 
     public static void main( String[] args ) {
 	int[] arr0 = {0};
-	int[] arr1 = new int [10];
+	/*int[] arr1 = new int [10];
 	int[] arr2 = new int [100];
 	int[] arr3 = new int [1000];
 	int[] arr4 = new int [10000];
@@ -47,7 +47,16 @@ public class MergeSortTester {
 	populate(arr2);
 	populate(arr3);
 	populate(arr4);
-	populate(arr5);
+	populate(arr5);*/
+	
+	printArray( sort( arr0 ) );
+	/*printArray( sort( arr1 ) );
+	printArray( sort( arr2 ) );
+	printArray( sort( arr3 ) );
+	printArray( sort( arr4 ) );
+	printArray( sort( arr5 ) );*/
+	
+	System.currentTimeMillis();
 	    
 	
     }//end main
