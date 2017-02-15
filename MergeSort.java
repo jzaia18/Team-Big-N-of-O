@@ -27,8 +27,7 @@ public class MergeSort {
      * Postcond: Input arrays unchanged, and 
      * output array sorted in ascending order.
      ******************************************************/
-    private static int[] merge( int[] a, int[] b ) 
-    {
+    private static int[] merge( int[] a, int[] b ) {
 
 	int [] retArr = new int[a.length + b.length];
 	
@@ -117,12 +116,12 @@ public class MergeSort {
     }
     //---------------------------------------------------
 
-    public static void populate(int []  a){
+    /*public static void populate(int []  a){
 	int al = a.length;
 	for (int i = 0; i < al; i++){
 	    a[i] = (int) Math.random() * 101;
 	}
-    }
+    }*/
 
     //main method for testing
     public static void main( String [] args ) {
