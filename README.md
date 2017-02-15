@@ -8,10 +8,12 @@
   * Create randomly populated integer arrays of increasing length and testing them using System.currentTimeMillis() and then comparing their runtimes
 
 ### Finding Runtime (in milliseconds):
-' long beginTime = System.currentTimeMillis(); '
-' //code... '
-' //code... '
-' //code... '
-' long endTime = System.currentTimeMillis(); '
-' long difference = endTime - beginTime; '
-' System.out.println( difference ); '
+```javascript
+ long beginTime = System.currentTimeMillis();
+ //code...
+ //code...
+ //code...
+ long endTime = System.currentTimeMillis(); 
+ long difference = endTime - beginTime;
+ System.out.println( difference );
+'''
