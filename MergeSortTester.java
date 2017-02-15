@@ -1,15 +1,12 @@
 /*======================================
   class MergeSortTester
-
   ALGORITHM:
   Create randomly populated integer arrays
   of increasing length and testing them using
   System.currentTimeMillis() and then comparing
   their runtimes
-
   BIG-OH CLASSIFICATION OF ALGORITHM:
   O(n*log(n))
-
   Mean execution times for dataset of size n:
   Batch size: <# of times each dataset size was run>
   n=1       time: 
@@ -17,7 +14,6 @@
   n=100     time: 
   ...
   n=<huge>  time: 
-
   ANALYSIS:
   <INSERT YOUR RESULTS ANALYSIS HERE>
   ======================================*/
@@ -34,7 +30,7 @@ public class MergeSortTester {
     public static void populate(int []  a){
 	int al = a.length;
 	for (int i = 0; i < al; i++){
-	    a[i] = (int) 101 * Math.random();
+	    a[i] = (int) Math.random() * 101;
 	}
     }
 
