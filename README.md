@@ -10,6 +10,6 @@
 
 ### Finding Runtime (in milliseconds):
 ```javascript
- beginTime = System.nanoTime();
-	MergeSort.sort( arrN );
-	System.out.println("Time for an array of size 1: " + (System.nanoTime() - beginTime ));
+beginTime = System.nanoTime();
+MergeSort.sort( arrN );
+System.out.println("Time for an array of size 1: " + (System.nanoTime() - beginTime ));
