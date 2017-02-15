@@ -56,27 +56,27 @@ public class MergeSortTester {
 
 	beginTime = System.nanoTime();
 	MergeSort.sort( arr0 );
-	System.out.println("Time for an array of size 1: " + (System.nanoTime() - beginTime ));
+	System.out.println("Time for an array of size 1: " + ( System.nanoTime() - beginTime ));
 
 	beginTime = System.nanoTime();
 	MergeSort.sort( arr1 );
-	System.out.println("Time for an array of size 10: " + (System.nanoTime() - beginTime ));
+	System.out.println("Time for an array of size 10: " + ( System.nanoTime() - beginTime ));
 
 	beginTime = System.nanoTime();
 	MergeSort.sort( arr2 );
-	System.out.println("Time for an array of size 100: " + (System.nanoTime() - beginTime ));
+	System.out.println("Time for an array of size 100: " + ( System.nanoTime() - beginTime ));
 
 	beginTime = System.nanoTime();
 	MergeSort.sort( arr3 );
-	System.out.println("Time for an array of size 1000: " + (System.nanoTime() - beginTime ));
+	System.out.println("Time for an array of size 1000: " + ( System.nanoTime() - beginTime ));
 
 	beginTime = System.nanoTime();
 	MergeSort.sort( arr4 );
-	System.out.println("Time for an array of size 10000: " + (System.nanoTime() - beginTime ));
+	System.out.println("Time for an array of size 10000: " + ( System.nanoTime() - beginTime ));
 
 	beginTime = System.nanoTime();
 	MergeSort.sort( arr5 );
-	System.out.println("Time for an array of size 100000: " + (System.nanoTime() - beginTime ));
+	System.out.println("Time for an array of size 100000: " + ( System.nanoTime() - beginTime ));
 	    
 	
     }//end main
