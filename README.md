@@ -14,4 +14,4 @@ To find the runtime of arrN...
 ```javascript
 beginTime = System.nanoTime();
 MergeSort.sort( arrN );
-System.out.println("Time for an array of size 1: " + ( System.nanoTime() - beginTime ));
+System.out.println( System.nanoTime() - beginTime );
