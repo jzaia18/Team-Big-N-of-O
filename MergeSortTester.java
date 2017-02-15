@@ -2,7 +2,10 @@
   class MergeSortTester
 
   ALGORITHM:
-  <INSERT YOUR DISTILLATION OF ALGO HERE>
+  Create randomly populated integer arrays
+  of increasing length and testing them using
+  System.currentTimeMillis() and then comparing
+  their runtimes
 
   BIG-OH CLASSIFICATION OF ALGORITHM:
   O(n*log(n))
@@ -23,9 +26,9 @@ public class MergeSortTester {
 
     /******************************
      * execution time analysis 
-     * <INSERT YOUR DESCRIPTION HERE OF 
-     *  YOUR APPARATUS FOR GENERATING EXECUTION 
-     *  TIME DATA...>
+     * Using System.currentTimeMillis() to 
+     * find how long it takes to run our
+     * test cases
      ******************************/
 
     public static void populate(int []  a){
