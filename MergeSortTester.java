@@ -2,6 +2,8 @@
   class MergeSortTester
 
   ALGORITHM:
+
+  
   Create randomly populated integer arrays
   of increasing length and testing them using
   System.nanoTime() and then comparing
@@ -11,21 +13,23 @@
   O(n*log(n))
 
   Mean execution times for dataset of size n:
-  Batch size: 50
+  Batch size: 1000
   (Time in nanoseconds)
-  n=1       time: 9047
-  n=10      time: 4706
-  n=100     time: 15935
-  n=1000    time: 116320
-  n=10000   time: 1505866
-  n=100000  time: 9398490
+  n=1       time:    81,685
+  n=10      time:    15,762
+  n=100     time:    10,617
+  n=1000    time:    73,392
+  n=10000   time:   764,313
+  n=100000  time: 8,360,916
   n=<huge>  time: n*log(n)
 
   ANALYSIS:
-  Our algorithm roughly fits the pattern, as each
-  array that is 10x longer tends to be more or
-  less 10x as long to run, with a tendancy to
-  overshoot the 10x (because of the log n)
+  Where n>100, our times are exactly as expected,
+  being slightly greater than 10x as long.
+  However, for smaller arrays the time appears to
+  follow no partiular pattern and in fact does the
+  opposite of what is expected, presumably due to the
+  JVM needing to warm up.
   ======================================*/
 
 public class MergeSortTester {
@@ -47,7 +51,7 @@ public class MergeSortTester {
 
     public static void main( String[] args ) {
         
-	long beginTime = System.nanoTime();
+	long beginTime;
         
 	int[] arr0 = {0};
 	int[] arr1 = new int [10];
@@ -63,40 +67,40 @@ public class MergeSortTester {
 	populate( arr5 );
 
 	beginTime = System.nanoTime();
-	for (int i = 0; i < 50; i ++){
+	for (int i = 0; i < 1000; i ++){
 	    MergeSort.sort( arr0 );
 	}
-	System.out.println("Time for an array of size 1: " + ((System.nanoTime() - beginTime )) / 50);
+	System.out.println("Time for an array of size 1: " + ((System.nanoTime() - beginTime )) / 1000);
 
         beginTime = System.nanoTime();
-	for (int i = 0; i < 50; i ++){
+	for (int i = 0; i < 1000; i ++){
 	    MergeSort.sort( arr1 );
 	}
-	System.out.println("Time for an array of size 10: " + ((System.nanoTime() - beginTime )) / 50);
+	System.out.println("Time for an array of size 10: " + ((System.nanoTime() - beginTime )) / 1000);
 
 	beginTime = System.nanoTime();
-	for (int i = 0; i < 50; i ++){
+	for (int i = 0; i < 1000; i ++){
 	    MergeSort.sort( arr2 );
 	}
-	System.out.println("Time for an array of size 100: " + ((System.nanoTime() - beginTime )) / 50);
+	System.out.println("Time for an array of size 100: " + ((System.nanoTime() - beginTime )) / 1000);
 
 	beginTime = System.nanoTime();
-	for (int i = 0; i < 50; i ++){
+	for (int i = 0; i < 1000; i ++){
 	    MergeSort.sort( arr3 );
 	}
-	System.out.println("Time for an array of size 1000: " + ((System.nanoTime() - beginTime )) / 50);
+	System.out.println("Time for an array of size 1000: " + ((System.nanoTime() - beginTime )) / 1000);
 
 	beginTime = System.nanoTime();
-	for (int i = 0; i < 50; i ++){
+	for (int i = 0; i < 1000; i ++){
 	    MergeSort.sort( arr4 );
 	}
-	System.out.println("Time for an array of size 10000: " + ((System.nanoTime() - beginTime )) / 50);
+	System.out.println("Time for an array of size 10000: " + ((System.nanoTime() - beginTime )) / 1000);
 
 	beginTime = System.nanoTime();
-	for (int i = 0; i < 50; i ++){
+	for (int i = 0; i < 1000; i ++){
 	    MergeSort.sort( arr5 );
 	}
-	System.out.println("Time for an array of size 100000: " + ((System.nanoTime() - beginTime )) / 50);
+	System.out.println("Time for an array of size 100000: " + ((System.nanoTime() - beginTime )) / 1000);
 	    
 	
     }//end main
